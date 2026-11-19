@@ -1,0 +1,38 @@
+:root{color-scheme:light;--azul:#143e58;--azul-fuerte:#0e607d;--suave:#edf8fb;--linea:#cde1e9;--texto:#183246;--naranja:#f18c36}
+*{box-sizing:border-box}
+body{margin:0;background:linear-gradient(180deg,#e9f5fb,#f8fcff 52%,#eaf5f7);color:var(--texto);font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;min-height:100vh}
+.marco{width:min(1100px,calc(100% - 36px));margin:0 auto}
+.encabezado{padding:29px 0 10px}
+.superior{font-size:.76rem;letter-spacing:.16em;font-weight:800;color:#19718f;text-transform:uppercase}
+h1{font-size:clamp(1.6rem,3vw,2.35rem);letter-spacing:-.04em;color:#123951;line-height:1.15;margin:.4rem 0 .7rem}
+.descripcion{color:#526b79;max-width:880px;line-height:1.5;margin:0 0 18px}
+.panel{background:#fff;border:1px solid #d8e6ec;box-shadow:0 12px 34px #15485d13;border-radius:20px;padding:21px}
+.fila{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin:0 0 16px}
+label{font-weight:650}
+input[type="number"]{border:1px solid #a9ccd8;background:#fff;border-radius:9px;padding:10px;width:90px;font-size:1rem}
+button,.boton-enlace{background:#106889;border:0;color:white;padding:11px 17px;font-size:.95rem;border-radius:11px;cursor:pointer;text-decoration:none;font-weight:700;display:inline-flex;align-items:center;justify-content:center}
+button:hover,.boton-enlace:hover{background:#0c506b}
+button:focus-visible,.boton-enlace:focus-visible,a:focus-visible{outline:3px solid #f6bd60;outline-offset:3px}
+.aviso{background:#eef8fb;color:#276177;border-left:4px solid #3b9eb8;border-radius:0 10px 10px 0;padding:11px 15px;font-size:.9rem;line-height:1.5}
+.etiqueta{display:inline-flex;padding:6px 10px;border-radius:99px;background:#dceff6;color:#245870;font-weight:750;font-size:.84rem}
+.pie{font-size:.78rem;color:#718894;padding:17px 0 24px;text-align:center}
+.pecera{position:relative;width:min(100%,610px);aspect-ratio:1/1;overflow:hidden;border:9px solid #247c9c;border-radius:22px;background:#add8e6;display:grid;box-shadow:inset 0 8px 22px #0d56752a,0 13px 30px #16527025}
+.celda{border:1px solid #ffffff83;background:#ffffff18;min-width:0;min-height:0}
+.fondo-contenido{display:flex;flex-direction:column;align-items:center;gap:13px}
+.resumen{font-size:.92rem;color:#496674;font-weight:600}
+@media(max-width:580px){.panel{padding:13px}.encabezado{padding-top:22px}.pecera{border-width:6px}}
+
+.pecera{isolation:isolate}
+.zonas{position:absolute;inset:0;display:grid;grid-template-columns:1fr 1fr;align-items:end;z-index:2;padding:0 5% 6%;gap:4%}
+.zona{position:relative;min-height:48%;padding:14px 9px;display:flex;flex-direction:column;align-items:center;justify-content:center;border:2px dashed #ffffffbb;border-radius:17px;background:#ffffff2a;backdrop-filter:blur(2px);text-align:center}
+.zona-nemo{border-color:#ffb879}
+.zona-dory{border-color:#74c4f6}
+.emoji-pez{font-size:clamp(2.2rem,6vw,3.5rem);line-height:1.2;filter:drop-shadow(0 3px 3px #ffffffaa)}
+.nombre-pez{font-size:1.15rem;font-weight:800;color:#153f57;margin:5px 0 1px}
+.contador{font-weight:900;font-size:clamp(1.5rem,4.5vw,2.1rem);margin:5px 0;color:#123f60;font-variant-numeric:tabular-nums}
+.zona button{padding:8px 10px;font-size:.79rem;background:#174e68}
+.zona small{font-size:.72rem;margin-top:9px;background:#ffffffa8;padding:3px 6px;border-radius:5px}
+.barra-estado{width:min(100%,610px);display:flex;justify-content:space-between;gap:9px;align-items:center;flex-wrap:wrap;margin-bottom:6px}
+.acciones{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin:15px 0}
+.boton-enlace{background:#315c72}
+@media(max-width:580px){.zona{min-height:45%;padding:9px 3px}.zona button{font-size:.65rem;padding:8px 5px}.zona small{font-size:.59rem}.emoji-pez{font-size:2.2rem}}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pregunta 3 | LAB10 20226066 IA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="marco encabezado">
+    <div class="superior">GTICS · Laboratorio 10 · Código 20226066</div>
+    <h1>Pregunta 3. Burbujas con Drag and Drop</h1>
+    <p class="descripcion">Cada <strong>2 segundos</strong> aparece una burbuja arriba de la pecera. Arrastra <strong>naranja → Nemo</strong> o <strong>azul → Dory</strong>. Una burbuja solo suma al caer en su zona correcta.</p>
+  </header>
+  <main class="marco panel">
+    <div class="fondo-contenido">
+      <div class="barra-estado">
+        <span class="etiqueta">Tiempo: <span id="tiempo">0</span> s</span>
+        <span class="etiqueta">Burbujas: <span id="numero-burbujas">0</span></span>
+        <span class="etiqueta" id="mensaje" aria-live="polite">Arrastra con el mouse</span>
+      </div>
+      <div id="pecera" class="pecera" aria-label="Tablero con burbujas de Nemo y Dory"></div>
+    </div>
+    <div class="acciones">
+      <button id="limpiar" type="button">Limpiar pecera (recargar)</button>
+      <a class="boton-enlace" href="index.html" target="_blank" rel="noopener noreferrer">Abrir otro acuario</a>
+    </div>
+    <p class="aviso">Las burbujas equivocadas o soltadas fuera del tablero no suman ni desaparecen: permanecen en su posición original. El juego está diseñado para arrastrar con mouse o trackpad.</p>
+  </main>
+  <footer class="pie">Laboratorio 10 · APIs nativas de JavaScript</footer>
+</body>
+</html>

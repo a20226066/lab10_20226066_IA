@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pregunta 2 | LAB10 20226066 IA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="marco encabezado">
+    <div class="superior">GTICS · Laboratorio 10 · Código 20226066</div>
+    <h1>Pregunta 2. Nemo, Dory y Web Storage</h1>
+    <p class="descripcion">Nemo recuerda su cuenta en todas las pestañas del mismo origen (<code>localStorage</code>). Dory recuerda solo su pestaña (<code>sessionStorage</code>). El agua pasa gradualmente de azul a verde.</p>
+  </header>
+  <main class="marco panel">
+    <div class="fondo-contenido">
+      <div class="barra-estado">
+        <span class="etiqueta">Tiempo desde la limpieza: <span id="tiempo">0</span> s</span>
+        <span class="etiqueta">Agua: azul → verde (60 s)</span>
+      </div>
+      <div id="pecera" class="pecera" aria-label="Pecera de Nemo y Dory"></div>
+    </div>
+    <div class="acciones">
+      <button id="limpiar" type="button">Limpiar pecera (recargar)</button>
+      <a class="boton-enlace" href="index.html" target="_blank" rel="noopener noreferrer">Abrir otro acuario (nueva pestaña)</a>
+    </div>
+    <p class="aviso">Prueba: suma 2 a Nemo y 3 a Dory. Recarga y comprueba que ambos recuerdan. Después abre una pestaña nueva con el enlace: Nemo mantiene su valor y Dory empieza en 0.</p>
+  </main>
+  <footer class="pie">Laboratorio 10 · APIs nativas de JavaScript</footer>
+</body>
+</html>

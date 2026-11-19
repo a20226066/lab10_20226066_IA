@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pregunta 1 | LAB10 20226066 IA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="marco encabezado">
+    <div class="superior">GTICS · Laboratorio 10 · Código 20226066</div>
+    <h1>Pregunta 1. Crear una pecera con la API DOM</h1>
+    <p class="descripcion">La función <strong>crearPecera(x)</strong> construye un tablero de <strong>x filas y x columnas</strong> creando sus celdas desde JavaScript, sin escribirlas una a una en el HTML.</p>
+  </header>
+  <main class="marco panel">
+    <form id="formulario" class="fila">
+      <label for="tamano">Dimensión x:</label>
+      <input type="number" id="tamano" min="1" max="20" value="6" required>
+      <button type="submit">Generar tablero</button>
+      <span class="etiqueta" id="medidas" aria-live="polite">6 × 6 = 36 celdas</span>
+    </form>
+    <div class="fondo-contenido">
+      <div id="pecera" class="pecera" aria-label="Tablero cuadriculado de la pecera"></div>
+      <p class="resumen">Haz clic en una celda para resaltarla: es otro ejemplo de manipulación del DOM.</p>
+    </div>
+    <p class="aviso">API utilizada: <code>document.createElement()</code>, <code>appendChild()</code>, <code>getElementById()</code> y <code>replaceChildren()</code>.</p>
+  </main>
+  <footer class="pie">Laboratorio 10 · APIs nativas de JavaScript</footer>
+</body>
+</html>
